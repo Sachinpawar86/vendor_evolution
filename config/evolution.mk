@@ -18,9 +18,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # Evolution X packages
 PRODUCT_PACKAGES += \
     EvoEgg \
-    GameSpace \
-    OmniJaws \
-    OmniStyle
+    GameSpace
+#    OmniStyle
+#    OmniJaws \
 
 PRODUCT_PACKAGES += \
     Updater
@@ -29,6 +29,12 @@ ifeq ($(WITH_GMS),false)
 PRODUCT_PACKAGES += \
     UpdaterVanillaOverlay
 endif
+
+# LMO packages
+PRODUCT_PACKAGES += \
+    LMOFreeform \
+    LMOFreeformSidebar
+#    LMOSystemUIClock
 
 # BtHelper
 PRODUCT_PACKAGES += \
